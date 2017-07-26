@@ -12,4 +12,7 @@
     <div>
         <input type="submit" value="Submit">
     </div>
+
 </form>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script type='text/javascript' src="js/form.js"></script>
