@@ -23,6 +23,11 @@ public class FormController {
         return "form";
     }
 
+    @RequestMapping(value = "api/login", method = RequestMethod.GET, produces = "application/json")
+    public String getJson(Map<String, Object> model){
+        return "files/form.json";
+    }
+
     @RequestMapping(value = "form", method = RequestMethod.POST)
     public String submitForm(@ModelAttribute Form form) {
         FormService formService = new FormService();
