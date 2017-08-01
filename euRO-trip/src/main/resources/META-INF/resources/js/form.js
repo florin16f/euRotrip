@@ -21,7 +21,7 @@ $( document ).ready(function() {
           });
 
 
-         $.getJSON( '@RequestMapping(value = "api/login", method = RequestMethod.GET, produces = "application/json")', function( data ) {
+         $.getJSON( "/form", function( data ) {
               var items = [];
               items.push( "<input type=\"hidden\" value="+data.question+" name=\"question\">"+data.question);
               for (var i in data.answers) {
