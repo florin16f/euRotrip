@@ -25,7 +25,8 @@ public class FormController {
 
     @RequestMapping(value = "api/login", method = RequestMethod.GET, produces = "application/json")
     public String getJson(Map<String, Object> model){
-        return "files/form.json";
+        Form form = FormCreator.createForm();
+        return "form";
     }
 
     @RequestMapping(value = "form", method = RequestMethod.POST)
