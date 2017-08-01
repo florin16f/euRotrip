@@ -10,6 +10,7 @@ import java.util.Map;
 @Controller
 public class SimpleController {
 
+
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String getHome(Map<String, Object> model) {
         return "index";
@@ -24,14 +25,10 @@ public class SimpleController {
     public String getOrase(Map<String, Object> model) {
         return "orase";
     }
+
     @RequestMapping(value = "contact", method = RequestMethod.GET)
     public String getContact(Map<String, Object> model) {
         return "contact";
-    }
-
-    @RequestMapping(value = "contact_message", method = RequestMethod.GET)
-    public String getContactMessage(Map<String, Object> model) {
-        return "contact_message";
     }
 
     @RequestMapping(value = "timisoara", method = RequestMethod.GET)

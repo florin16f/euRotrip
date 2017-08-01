@@ -44,6 +44,13 @@
 									<div class="bg-nav"></div>
 								</a>
 							</li>
+							<li>
+                                <a href="/form">
+                                    <i class="icon-arrow"></i>
+                                    <span>Form</span>
+                                    <div class="bg-nav"></div>
+                                </a>
+                            </li>
 
 							<audio id="nav-sound" preload="auto">
 								<source src="audio/bouton.mp3"></source>
